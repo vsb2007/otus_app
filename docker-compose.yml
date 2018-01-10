@@ -1,12 +1,12 @@
 version: '3'
 services:
-  mongo_db:
+  mongo:
     image: mongo:${VER_MONGO}
     deploy:
       placement:
         constraints:
           - node.labels.reliability == high
-  rabbitmq:
+  rabbit:
     image: rabbitmq:latest
 
   search_engine_ui:

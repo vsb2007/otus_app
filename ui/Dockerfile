@@ -3,7 +3,7 @@ ADD ./search_engine_ui /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-ENV MONGO mongo_db
+ENV MONGO mongo
 ENV MONGO_PORT 27017
 ENV FLASK_APP ui.py
 WORKDIR /app/ui
