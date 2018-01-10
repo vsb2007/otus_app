@@ -1,0 +1,22 @@
+version: '3'
+services:
+  mongo_db:
+    image: mongo:${VER_MONGO}
+    deploy:
+      placement:
+        constraints:
+          - node.labels.reliability == high
+  rabbitmq:
+    image: rabbitmq:latest
+
+  search_engine_ui:
+    image: vsb2007/search_engine_ui:latest
+    ports:
+      - 8000:8000/tcp
+    restart: always
+
+  search_engine_crawler:
+    image: vsb2007/search_engine_crawler:latest
+    ports:
+      - 8001:8000/tcp
+    restart: always

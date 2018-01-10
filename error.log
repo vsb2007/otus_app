@@ -1,0 +1,31 @@
+search_engine_crawler_1  | {"event": "connect_to_MQ", "level": "info", "message": "Successfully connected to MQ host rabbitmq", "service": "crawler", "timestamp": "2018-01-10 18:38:37"}
+search_engine_crawler_1  | {"event": "publish_url", "level": "info", "message": "Successfully published URL in MQ", "params": {"url": "https://vitkhab.github.io/search_engine_test_site/"}, "service": "crawler", "timestamp": "2018-01-10 18:38:37"}
+mongo_db_1               | 2018-01-10T18:38:37.996+0000 I NETWORK  [initandlisten] connection accepted from 172.19.0.5:52564 #1 (1 connection now open)
+mongo_db_1               | 2018-01-10T18:38:37.998+0000 I NETWORK  [initandlisten] connection accepted from 172.19.0.5:52566 #2 (2 connections now open)
+search_engine_crawler_1  | {"event": "connect_to_db", "level": "info", "message": "Successfully connected to database", "service": "crawler", "timestamp": "2018-01-10 18:38:38"}
+search_engine_crawler_1  | Traceback (most recent call last):
+search_engine_crawler_1  |   File "crawler/crawler.py", line 279, in <module>
+search_engine_crawler_1  |     channel.start_consuming()
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1756, in start_consuming
+search_engine_crawler_1  |     self.connection.process_data_events(time_limit=None)
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 716, in process_data_events
+search_engine_crawler_1  |     self._dispatch_channel_events()
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 518, in _dispatch_channel_events
+search_engine_crawler_1  |     impl_channel._get_cookie()._dispatch_events()
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1385, in _dispatch_events
+search_engine_crawler_1  |     evt.body)
+search_engine_crawler_1  |   File "crawler/crawler.py", line 217, in callback
+search_engine_crawler_1  |     if match(exclude, url):
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/re.py", line 172, in match
+search_engine_crawler_1  |     return _compile(pattern, flags).match(string)
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/re.py", line 301, in _compile
+search_engine_crawler_1  |     p = sre_compile.compile(pattern, flags)
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/sre_compile.py", line 562, in compile
+search_engine_crawler_1  |     p = sre_parse.parse(p, flags)
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/sre_parse.py", line 856, in parse
+search_engine_crawler_1  |     p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, False)
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/sre_parse.py", line 415, in _parse_sub
+search_engine_crawler_1  |     itemsappend(_parse(source, state, verbose))
+search_engine_crawler_1  |   File "/usr/local/lib/python3.6/sre_parse.py", line 615, in _parse
+search_engine_crawler_1  |     source.tell() - here + len(this))
+search_engine_crawler_1  | sre_constants.error: nothing to repeat at position 0
