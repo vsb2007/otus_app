@@ -1,3 +1,5 @@
 # otus_app
 
-#Create infrastructure for App by <a href="./terraform">terraform</a>
+- folder `docker` for test running app on local machine by docker-compose
+- Create infrastructure for App by [Teeraform](./terraform)
+
