@@ -1,7 +1,8 @@
 # Terraform
 
-# Init
+- Install [Terraform](https://www.terraform.io/downloads.html)
 
+# Init
 Before init you must create backends storage on your cloud platform and edit `backends.tf` file.
 Change `main.tf` as you wish/need.
 
