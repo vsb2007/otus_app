@@ -7,17 +7,13 @@ provider "google" {
 resource "google_container_cluster" "primary" {
   name               = "gke-test"
   zone               = "us-central1-a"
-
   node_version       = "1.8.5-gke.0"
   min_master_version = "1.8.5-gke.0"
-
   initial_node_count = 1
-
   node_config {
     disk_size_gb = "20"
     machine_type = "n1-standard-1"
   }
-
   addons_config {
     kubernetes_dashboard {
       disabled = false
@@ -34,7 +30,6 @@ resource "google_container_node_pool" "np1" {
     disk_size_gb = "20"
     machine_type = "n1-standard-2"
   }
-
   depends_on = ["google_container_cluster.primary"]
 }
 
