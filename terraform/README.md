@@ -3,7 +3,7 @@
 # Init
 
 Before init you mast create backends storage on your cloud platform and edit `backends.tf` file.
-Change main.tf as you wish
+Change `main.tf` as you wish
 
 Then:
 ```
