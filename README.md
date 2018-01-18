@@ -5,7 +5,7 @@
 - folder [docker](./docker) for test running app on local machine by docker-compose
 - Create k8s infrastructure for App by [Terraform](./terraform), connecting to k8s cluster are included
 - Install [Helm](https://github.com/kubernetes/helm/releases) to `/usr/bin` or other folder for your OS
-- Установим серверную часть Helm’а - Tiller.
+- Install server side Helm’s - Tiller.
 ```
 #
 #Tiller - это аддон Kubernetes, т.е. Pod, который
