@@ -1,2 +1,4 @@
 project = "infra-179306"
-region = "europe-west1"
+region = "us-central1"
+zone = "us-central1-a"
+k8sClusterName = "gke-test"
