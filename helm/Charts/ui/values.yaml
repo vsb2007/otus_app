@@ -1,0 +1,11 @@
+---
+service:
+  internalPort: 8000
+  externalPort: 8000
+
+image:
+  repository: vsb2007/search_engine_ui
+  tag: latest
+
+databaseHost:
+databasePort:

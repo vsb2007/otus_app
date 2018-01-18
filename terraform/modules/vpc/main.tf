@@ -16,7 +16,7 @@ resource "google_compute_firewall" "firewall_k8s_80" {
 
   allow {
     protocol = "${var.k8s_protocol}"
-    ports    = ["80"]
+    ports    = ["8000"]
   }
 
   source_ranges = "${var.source_ranges}"

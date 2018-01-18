@@ -1,0 +1,14 @@
+crawler:
+  image:
+    repository: vsb2007/search_engine_crawler
+  checkInterval: 3600
+  excludeUrls: .*github.com
+  rabbitmqUsername: crawler
+  rabbitmqPassword: crawler
+  args:
+    - "https://vitkhab.github.io/search_engine_test_site/"
+
+rabbitmq:
+  rabbitmqUsername: crawler
+  rabbitmqPassword: crawler
+  rabbitmqNodePort: 5672
