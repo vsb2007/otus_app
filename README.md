@@ -31,3 +31,16 @@ $ helm install . --name search-engine-test
 ```
 $ kubectl get ingress
 ```
+- Install Gitlab
+```
+$ cd helm/Charts/gitlab-omnibus
+$ helm install --name gitlab . -f values.yaml
+$ kubectl get service -n nginx-ingress nginx
+NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE
+nginx LoadBalancer 10.11.241.113 35.184.199.209 80:31782/TCP,443:30043/TCP,22:31194/TCP 23m
+```
+-  in `/etc/hosts` (take your IP)
+```
+$ echo "35.184.199.209 gitlab-gitlab staging production” >> /etc/hosts
+```
+- Read [Gitlab Readme](./helm/Charts/gitlab-omnibus)
