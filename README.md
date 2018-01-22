@@ -43,4 +43,4 @@ nginx LoadBalancer 10.11.241.113 35.184.199.209 80:31782/TCP,443:30043/TCP,22:31
 ```
 $ echo "35.184.199.209 gitlab-gitlab staging production” >> /etc/hosts
 ```
-- Read [Gitlab Readme](./helm/Charts/gitlab-omnibus)
+- Read [Gitlab Readme](./helm/Charts/gitlab-omnibus/Setting.md)
