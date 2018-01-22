@@ -1,6 +1,7 @@
 # otus_app
-# Курсовая работа (проект) по курсу [DevOps практики и инструменты](https://otus.ru/lessons/devops-praktiki-i-instrumenty/)
-# Преподователи: [Экспресс 42](https://express42.com/)
+## Курсовая работа (проект) по курсу:
+## [DevOps практики и инструменты](https://otus.ru/lessons/devops-praktiki-i-instrumenty/)
+## Преподователи: [Экспресс 42](https://express42.com/)
 
 # Технологии и интсрументы
 - [Google Cloud](https://console.cloud.google.com)
@@ -11,6 +12,12 @@
 - [Gitlab](https://about.gitlab.com/)
 - etc...
 
+## Приложение search_engine:
+- [search_engine_ui](docker/ui/search_engine_ui)
+- [search_engine_crawler](docker/ui/search_engine_crawler)
+
+
+## Установка и запуск
 
 - Install Docker
 - Install and init gCloud
