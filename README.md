@@ -1,9 +1,9 @@
 # otus_app
 ## Курсовая работа (проект) по курсу:
-## [DevOps практики и инструменты](https://otus.ru/lessons/devops-praktiki-i-instrumenty/)
+### [DevOps практики и инструменты](https://otus.ru/lessons/devops-praktiki-i-instrumenty/)
 ## Преподователи: [Экспресс 42](https://express42.com/)
 
-# Технологии и интсрументы
+## Технологии и инструменты
 - [Google Cloud](https://console.cloud.google.com)
 - [Terraform](https://www.terraform.io/)
 - [Docker](https://www.docker.com/)
