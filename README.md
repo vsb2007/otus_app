@@ -1,4 +1,6 @@
 # otus_app
+# Курсовая работа (проект) по курсу `[DevOps практики и инструменты](https://otus.ru/lessons/devops-praktiki-i-instrumenty/)`
+# Преподователи: [Экспресс 42](https://express42.com/)
 
 - Install Docker
 - Install and init gCloud
