@@ -10,7 +10,12 @@
 - [K8S](https://kubernetes.io/)
 - Helm
 - [Gitlab](https://about.gitlab.com/)
-- etc...
+
+## То,что осталось реализовать:
+- Мониторинг (сбор метрик, алертинг, визуализация)
+- Логирование (опционально)
+- Трейсинг (опционально)
+- ChatOps (опционально)
 
 ## Приложение search_engine:
 - [search_engine_ui](docker/ui/search_engine_ui)
