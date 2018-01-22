@@ -17,7 +17,8 @@
 - Трейсинг (опционально)
 - ChatOps (опционально)
 
-## Приложение search_engine:
+# Приложение search_engine:
+
 - [search_engine_ui](docker/ui/search_engine_ui)
 - [search_engine_crawler](docker/crawler/search_engine_crawler)
 
