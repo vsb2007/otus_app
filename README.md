@@ -10,7 +10,7 @@
 #
 #Tiller - это аддон Kubernetes, т.е. Pod, который
 #общается с API Kubernetes.
-$ kubectl apply -f tiller.yml
+$ kubectl apply -f helm/tiller.yml
 ```
 - Let's start helm tiller-server pod
 ```
