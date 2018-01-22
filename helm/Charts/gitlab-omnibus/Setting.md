@@ -1,6 +1,6 @@
 - Create new Group in Gitlab as your hub.docker username
-- Create user <username>/<password> with Access to this group
-- Create access token <token> for this user
+- Create user `<username>/<password>` with Access to this group
+- Create access token `<token>` for this user
 - Create Variable in `Group -> Setting -> CI/CD`
 ```
 CD_USER_GIT = <username>
